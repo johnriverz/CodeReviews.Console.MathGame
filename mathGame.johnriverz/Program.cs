@@ -101,7 +101,7 @@ while(!gameOver)
             break;
         case 7:
             difficultyLevel = ChangeDifficulty();
-            DifficultyLevel difficultyEnum = (DifficultyLevel)difficultyLevel;
+            DifficultyLevel difficultyEnum = difficultyLevel;
             Enum.IsDefined(typeof(DifficultyLevel), difficultyEnum);
 
             Console.WriteLine($"New difficulty level: {difficultyLevel}");
